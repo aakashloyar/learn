@@ -1,0 +1,2 @@
+Turn off the Go language server (gopls) temporarily to stop cross-file diagnostics:
+Show in Settings Editor

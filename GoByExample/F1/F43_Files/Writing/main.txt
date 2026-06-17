@@ -1,0 +1,2 @@
+Hello Aakash!
+Welcome to Go file writing.

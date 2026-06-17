@@ -1,0 +1,29 @@
+//make the folders
+go mod init github.com/aakash-loyar/gmake
+go build ./...
+
+cd ~/go-dev/mathgo
+git init
+git branch -m main
+git add .
+git commit -m "Initial commit of mathgo module"
+git remote add origin git@github.com:aakash-loyar/mathgo.git
+git push -u origin main
+
+git tag v0.1.0
+git push origin v0.1.0
+
+go mod init github.com/aakash-loyar/grun
+
+
+go get github.com/aakash-loyar/mathgo@v0.1.0
+go mod tidy
+This downloads your library from GitHub and updates go.mod:
+
+module github.com/aakash-loyar/usingmath
+
+go 1.23
+
+require github.com/aakash-loyar/mathgo v0.1.0
+
+go run .

@@ -1,0 +1,9 @@
+| Status Code | Constant                         | Meaning                 |
+| ----------- | -------------------------------- | ----------------------- |
+| 200         | `http.StatusOK`                  | Success                 |
+| 201         | `http.StatusCreated`             | Resource created        |
+| 400         | `http.StatusBadRequest`          | Invalid request         |
+| 401         | `http.StatusUnauthorized`        | Authentication required |
+| 403         | `http.StatusForbidden`           | Permission denied       |
+| 404         | `http.StatusNotFound`            | Resource not found      |
+| 500         | `http.StatusInternalServerError` | Server error            |

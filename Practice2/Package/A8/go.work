@@ -1,0 +1,13 @@
+go 1.25.0
+
+use (
+	./make
+	./start
+)
+
+
+//now in this structure command that are used
+//go mod init github.com/aakash/make
+//go mod init github.com/aakash/start
+//go work init ./make ./start
+//go run .

@@ -1,0 +1,2 @@
+go install
+The go install command compiles and installs a package or packages on your local machine for your personal usage. It installs the package's compiled binary in the GOBIN directory. 

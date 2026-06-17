@@ -1,0 +1,3 @@
+Option A — use replace (local development, simple)
+Option B — use go work (recommended for multiple local modules)
+Option C _  If you want to publish (so consumers don't need replace)

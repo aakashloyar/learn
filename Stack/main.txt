@@ -1,0 +1,4 @@
+*** ORM
+GORM vs SQLX+goose ->make bit easy create migration file
+-> SQLX -> high performance and less overhead have to write more sql
+//fmt.Fprintln(w, "Hello")->print to http browser(give response)

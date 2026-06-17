@@ -1,0 +1,10 @@
+mychan:=make(chan string)
+//this is unbuffered channel
+//this requires sender and receiver both together
+//otherwise there is a deadlock
+//as it does not have size means it is not empty and full
+//so you cannot put anything in it 
+
+
+mychan:=make(chan string,2)
+//while buffered channel are like box you can put something in them

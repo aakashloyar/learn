@@ -1,0 +1,17 @@
+In addition to these methods:
+
+Lock()
+Unlock()
+The sync.RWMutex also has these methods for concurrent reads:
+
+RLock()
+RUnlock()
+The sync.RWMutex improves performance in read-intensive processes. Multiple goroutines can safely read from the map simultaneously, as many RLock() calls can occur at the same time. However, only one goroutine can hold a Lock(), and during this time, all RLock() operations are blocked.
+
+
+| Feature                        | `Mutex`                | `RWMutex`                           |
+| ------------------------------ | ---------------------- | ----------------------------------- |
+| Multiple readers at once       | ❌ No                   | ✅ Yes                               |
+| One writer at a time           | ✅ Yes                  | ✅ Yes                               |
+| Reader + Writer simultaneously | ❌ No                   | ❌ No                                |
+| Use case                       | Simple synchronization | Many reads, few writes (read-heavy) |
